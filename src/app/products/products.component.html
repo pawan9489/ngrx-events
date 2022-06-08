@@ -1,0 +1,5 @@
+<h2>Products list</h2>
+<div (click)="addProduct()">+</div>
+<ng-container *ngFor="let product of (products$ | async);">
+    <app-product [product]="product"></app-product>
+</ng-container>
